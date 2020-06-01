@@ -1,0 +1,656 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face{
+    src: url(fonts/OpenSansCondensed-Light.ttf);
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+@font-face{
+        src: url(fonts/Lekton-Regular.ttf);
+        font-family:'Lekton', sans-serif;
+}
+@font-face{
+    src: url(fonts/Nunito-ExtraLight.ttf);
+    font-family:'Nunito', sans-serif;
+}
+@font-face{
+    src: url(fonts/Abel-Regular.ttf);
+    font-family: 'Abel', sans-serif;;
+}
+h1{
+    font-family:'Lekton', sans-serif;
+}
+p{
+    font-family:'Nunito', sans-serif;
+}
+h2{
+    font-family:'Lekton', sans-serif;
+    font-variant: small-caps;
+}
+h3{
+    font-family:'Lekton', sans-serif;
+}
+h4{
+    font-family:'Lekton', sans-serif;
+}
+h5{
+    font-family:'Lekton', sans-serif;
+}
+
+body{
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navigation-bar*/
+.navbar-brand img{
+    height: 60px;
+    padding-left: 30px;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar-nav a:hover{
+    background-color: teal;
+    color: white !important;
+    }
+
+.navbar-toggler{
+    border: none !important;
+}
+.nav-link{
+    font-weight: 600;
+    font-size: 16px;
+    color: whitesmoke !important;
+    background-color: rgb(31, 30, 30);
+    height: 60px;    
+    width: 120px;
+    text-align: center;
+    
+}
+.collapse ul{
+    display: block;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+}
+.nav-item a{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*--slider--*/
+
+.carousel-caption{
+    background-color: rgba(251, 141, 121, 0.356);
+    margin: 25% auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.carousel-caption h1{
+    color: black;
+    font-size: 4vw;
+    font-variant: small-caps;
+}
+
+#slider .carousel-caption .left1{
+            font-size: 4vw;
+            position: relative;
+            animation-name: myleft1;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+}
+#slider .carousel-caption .right1{
+    font-size: 4vw;
+    position: relative;
+    animation-name: myright1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes myleft1{
+    0%{left: -32%;}
+    100%{left: -20%;}
+}
+@keyframes myright1{
+    0%{right: -32%;}
+    100%{right: -15%;}
+}
+
+#slider .carousel-caption .left2{
+            animation-name: myleft2;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+}
+
+#slider .carousel-caption .right2{
+            color: white;
+            animation-name: myright2;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+}
+
+@keyframes myleft2{
+        0%{color: black; transform: scale(1);}
+        50%{color: rgb(255, 255, 255); transform: scale(1.1);}
+        100%{color: black; transform: scale(1);}
+}
+@keyframes myright2{
+    0%{color:white; transform: scale(1);}
+    50%{color: black; transform: scale(.9);}
+    100%{color: white; transform: scale(1);}
+}
+#slider .carousel-caption .left3{
+                position: relative;
+                top: 40px;
+                left: -17%;
+                animation-name: myleft3;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+}
+#slider .carousel-caption .right3{
+            position: relative;
+            bottom: 40px;
+            right: -40px;
+            animation-name: myright3;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+}
+@keyframes myleft3{
+            0%{top: -30px;}
+            100%{top: 40px;}
+}
+@keyframes myright3{
+            0%{bottom: -30px;}
+            100%{bottom: 40px;}
+}
+
+
+/*---Profile---*/
+#about .heading{
+    text-align: center;
+    margin-top: 2%;
+
+}
+#about .heading h1{
+    font-variant: small-caps;
+}
+
+#about .row .col-md-6{
+    flex: 1;
+    min-width: 300px;
+}
+#about .row .profile-pic{
+    flex: 1;
+}
+#about .row .details{
+    flex: 1;
+    margin-left: 1%;
+}
+#about .row .profile-pic img{
+    display: flex;
+    margin: 0 auto;
+}
+.about-content{
+    font-size: 18px;
+}
+
+@media (min-width:468px){
+    #about .container .row{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+}
+
+
+#about .profile-pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 8px black;
+}
+
+.social h2{
+    margin-top: 2%;
+    font-size: 30px;
+    font-family:'Lekton', sans-serif;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            margin-right: 2%;
+            
+            box-shadow: 0 0 4px black;
+            transition: .6s;
+
+}
+.social-icons i{
+    font-size: 30px;
+    color: black;
+    margin:20% auto;
+    
+    
+}
+#about .social-icons i:hover{
+    color:white;
+    
+}
+#about .social-icons a:hover{
+    transform: translate(0,-10px);
+    text-decoration: none;
+}
+#about .social-icons .fb:hover{
+            background-color:#3b5999;
+}
+#about .social-icons .insta:hover{
+    background-color:#e4405f;
+}
+#about .social-icons .twit:hover{
+    background-color: #55acee;
+}
+#about .social-icons .linked:hover{
+    background-color: #0077B5;
+}
+#about h1{
+    font-size: 60px;
+}
+#about p{
+    font-size: 18px;
+
+}
+/*-----Experiences-----*/
+#experiences{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(bg4.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgba(245, 245, 245, 0.5);
+    font-weight: 600;
+    margin-top: 3%;
+}
+
+@media(min-width:768px){
+        .container2{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }   
+
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 10;
+    
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px); 
+    position:absolute ;
+    left: 20px;
+}
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+     stroke-dashoffset: 440;
+}
+
+
+.card1:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #00ff43;
+}
+.card2:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    stroke: #00a1ff;
+}
+.card3:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #be1f81;
+}
+
+
+
+.container2 .card1{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: url(Black/5.jpg);
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 20px auto;
+
+}
+.container2 .card2{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: url(Black/5.jpg);
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 20px auto;
+
+}
+.container2 .card3{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: url(Black/5.jpg);
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 20px auto;
+
+}
+
+.container2 .card1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
+}
+.container2 .card2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
+}
+.container2 .card3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
+}
+.container2 .box{
+    position: relative;
+    top: 12%;
+}
+
+/*----Project----*/
+#project .heading{
+    text-align: center;
+    margin-top: 2%;
+    
+}
+#project .heading h3{
+    font-size: 48px;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+.mybutton{
+    text-align: center;
+    background-color: blue;
+    margin: -2% auto 0 auto;
+    width: 220px;
+    transition-duration: .6s;
+}
+.mybutton img{
+    width: 100%;
+    
+}
+.mybutton:hover{
+    box-shadow: 0 0 16px black;
+}
+.hover-element{
+    z-index: 1;
+    position: relative;
+    top: 40%;
+}
+.coursera .mytext{
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 80px;
+    color: rgb(245, 245, 245,1);
+}
+
+
+/*-----Portfolio-----*/
+#portfolio .heading{
+    text-align: center;
+}
+#portfolio .heading h3{
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+.gallery {
+    box-sizing: border-box;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.gallery img{
+    margin: 30px;
+    transition: ease-in-out;
+    transition-duration: .5s;
+    opacity: 1;
+}
+.gallery img:hover{
+    box-shadow: 2px 2px 16px black;
+    transform: translate(0, -10px);
+    opacity: .7;
+}
+#portfolio .container{
+    margin-top: 50px;
+}
+.play-btn{
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    left: -50%;
+    opacity: 0;
+}
+.vid{
+    display: inline-block;
+    transition: .5s;
+    opacity: 1;
+}
+
+.vid:hover .play-btn{
+    opacity: 1;
+}
+.vid:hover{
+    transform: translate(0,-10px);
+    opacity: .7;
+}
+.modal-content{
+    background: transparent !important;
+    border: none !important;
+}
+/*------Contact-------*/
+#contact{
+    margin-top: 3%;
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 600px;
+    color: rgba(255, 255, 255, 0.733);
+}
+#contact .heading{
+    padding-top: 2%;
+    text-align: center;
+    
+}
+.myinformation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 20px;
+    background-color: teal;
+}
+.myinformation p{
+    margin: auto 0;
+}
+.myinformation i{
+    padding-right: 2%;
+}
+.myinformation .box1{
+            
+            display: flex;
+            flex-direction: row;
+            padding-left: 20%;
+            align-items: center;
+            margin-bottom: 2%;
+            
+}
+.myinformation .box2{
+    
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.myinformation .box3{
+    
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    align-items: center;
+}
+#contact .social{
+    margin-top: 15%;
+}
+#contact .social-icons{
+    display: flex;
+    justify-content: center;
+}
+#contact .social-icons a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            margin-right: 3%;
+            
+            box-shadow: 0 0 4px black;
+            transition: .6s;
+
+}
+#contact .social-icons i{
+    font-size: 30px;
+    color: black;
+    margin:20% auto;
+    
+    
+}
+#contact .social-icons i:hover{
+    color:white;
+    
+}
+#contact .social-icons a:hover{
+    transform: translate(0,-10px);
+    text-decoration: none;
+}
+#contact .social-icons .fb:hover{
+            background-color:#3b5999;
+}
+#contact .social-icons .insta:hover{
+    background-color:#e4405f;
+}
+#contact .social-icons .twit:hover{
+    background-color: #55acee;
+}
+#contact .social-icons .linked:hover{
+    background-color: #0077B5;
+}
+
+
+/*------Contact-------*
+
+#contact .social-icons{
+    padding-top: 20px;
+}
+
+#contact  .socialmedia i{
+font-size: 30px;
+color: black;
+transition: .5s;
+line-height: 50px;
+}
+#contact  .socialmedia i:hover{
+color:white;
+}
+#contact  .socialmedia a{
+position: relative;
+display: inline-block;
+margin-right: 20px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: rgb(255, 255, 255);
+text-align: center;
+transition: .5s;
+box-shadow: 0 0 4px black;
+top: 130px;
+right: 25%;
+}
+#contact  .socialmedia a:hover{
+transform: translate(0,-10px);
+}
+#contact  .socialmedia .fb:hover{
+        background-color:#3b5999;
+}
+#contact  .socialmedia .insta:hover{
+background-color:#e4405f;
+}
+#contact  .socialmedia .twit:hover{
+background-color: #55acee;
+}
+#contact  .socialmedia .linked:hover{
+background-color: #0077B5;
+}
+.socialmedia{
+width: 500px;
+display: block;
+margin: -70px 0 0 550px;
+}
+/*
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid coral;
+    border-radius: 50%;
+}
+#experiences p{
+    margin-top: 20px;
+    color: whitesmoke;
+    
+
+}*/
